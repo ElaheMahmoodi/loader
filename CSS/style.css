@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #8a2be2;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loading {
+  display: flex;
+  column-gap: 2rem;
+}
+.loading_circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  animation: loading 1.5s infinite;
+}
+.loading .loading_circle:nth-child(2) {
+  animation-delay: 0.25s;
+}
+.loading .loading_circle:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+@keyframes loading {
+  80% {
+    transform: scale(0);
+  }
+}
